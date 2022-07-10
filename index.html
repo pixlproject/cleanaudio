@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Clean Audio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="./discordInvite.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet"> 
+        <style type="text/css" id="cssID">
+            .sixteenbynine {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            }
+            a, h3 {
+                font-family: 'Dosis', sans-serif !important;
+            }
+        </style>
+    </head>
+<body>
 
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="./clean_audio_banner001.png" alt="Me" width="1500" height="600">
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Podcasts</a>
+    <a href="https://discord.gg/ZJtuxkBgTQ" class="w3-bar-item w3-button">Discord Server</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+
+
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center">Join the Discord!</h3>
+    <!--https://github.com/Aegis7Gaming/Discord-Invite-JS-HTML-CSS-->
+    <script src="./discordInvite.js"></script>
+    <script>
+        discordInvite.init({
+        inviteCode: 'ZJtuxkBgTQ',
+        title: 'Clean Audio',
+        });
+    discordInvite.render();
+    </script>
+    <center>
+        <div id="discordInviteBox"></div>
+    </center>
+    <br>
+    <h3 class="w3-center">Latest Podcast</h3>
+    <iframe src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UU4i7rY796_NBLfzuQhNiiyg" class="sixteenbynine" allowfullscreen>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form><br>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    
+
+
+</iframe>
+
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>
